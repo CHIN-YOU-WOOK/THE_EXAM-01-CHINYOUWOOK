@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>IOT 2기 시험 1회차(진유욱)</title>
+</head>
+
+<body>
+    <nav class="mt-1">
+        <div class="container d-flex mx-auto justify-end">
+            <div class="d-flex gap-1">
+                <input type="text" name="id" placeholder="아이디">
+                <input type="text" name="id" placeholder="비밀번호">
+                <button type="button">Login</button>
+                <button type="button">회원가입</button>
+            </div>
+        </div>
+        <hr class="mt-0">
+    </nav>
+    <header class="mt-1">
+        <div class="carousel_main">
+            <!-- 캐러셀 이미지 삽입 -->
+            <div class="carousel_wrapper">
+                <div class="carousel_slide">
+                    <img src="images/k1.png" alt="#" />
+                </div>
+                <div class="carousel_slide">
+                    <img src="images/k2.png" alt="#" />
+                </div>
+                <div class="carousel_slide">
+                    <img src="images/k3.png" alt="#" />
+                </div>
+                <div class="carousel_slide">
+                    <img src="images/k4.png" alt="#" />
+                </div>
+                <div class="carousel_slide">
+                    <img src="images/k5.png" alt="#" />
+                </div>
+            </div>
+        
+            <!-- 캐러셀 사이드 버튼 -->
+            <div class="carousel_button_container">
+                <button type="button" class="carousel_prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                        <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                    </svg>
+                </button>
+                <button type="button" class="carousel_next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </button>
+            </div>
+        
+            <!-- 캐러셀 중앙 버튼 -->
+            <div class="carousel_pagination">
+                <div class="carousel_circle"></div>
+                <div class="carousel_circle"></div>
+                <div class="carousel_circle"></div>
+                <div class="carousel_circle"></div>
+                <div class="carousel_circle"></div>
+            </div>
+        </div>
+    </header>
+    <main class="mt-3 container mx-auto">
+    <div class="main-signup">
+        <div class="container d-flex justify-center py-1 gap-3">
+        <h3>이름</h3> 
+        <span class="signup-input">
+        <input id="signup-name" type="text" placeholder="이름을 입력해주세요"></input>
+        </span>
+        </div>
+
+        <div class="container d-flex mx-auto justify-center py-1 gap-3">
+        <h3>아이디</h3>
+        <span class="signup-input">
+            <input id="signup-id" type="text" placeholder="ID를 입력해 주세요"></input>
+            <span class="signup-at"></span>
+            <button>중복확인</button>
+        </span>
+        </div>
+
+        <div class="container d-flex mx-auto justify-center py-1 gap-3">
+        <h3>비밀번호</h3>
+        <span class="signup-input">
+            <input id="signup-pw" type="text" placeholder="비밀번호를 입력해주세요"></input>
+            <span class="pw-lock"></span>
+        </span>
+        </div>
+
+        <div class="container d-flex mx-auto justify-center py-1 gap-3">
+        <h3>비밀번호 확인</h3>
+        <span class="signup-input">
+            <input id="signup-pww" type="text" placeholder="비밀번호를 다시 한번 입력해 주세요"></input>
+            <span class="pww-lock"></span>
+        </span>
+        </div>
+
+        <div class="container d-flex mx-auto justify-center py-1 gap-3">
+        <h3>이메일</h3>
+        <span class="signup-input">
+            <input id="signup-email" type="text" placeholder="이메일을 입력해주세요" ></input>
+        </span>
+        </div>
+    
+        <div class="container d-flex mx-auto justify-center py-1 gap-3">
+        <h3>휴대전화</h3>
+        <span class="signup-input">
+        <select id="signup-country" class="selectbox" name="country" onchange="">
+            <option value="ko">SKT </option> 
+        </select>
+        <input id="signup-email" type="text" placeholder="휴대폰 번호(-제외)" ></input>
+        </span>
+        </div>
+  
+    <div class="container d-flex mx-auto justify-center">
+    <input type="checkbox" id="scales" name="scales" checked />
+    <label for="scales">이벤트/쇼핑혜택 SMS 수신 동의(선택)</label>
+    </div>
+    <div class="container d-flex mx-auto justify-center">
+        <input type="checkbox" id="scales" name="scales" checked />
+        <label for="scales">이벤트/쇼핑혜택 이메일 수신 동의(선택)</label>
+    </div>
+     
+
+
+</main>
+    <script src="main.js"></script>
+</body>
+
+</html>

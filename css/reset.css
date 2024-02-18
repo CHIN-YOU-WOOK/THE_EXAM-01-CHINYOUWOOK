@@ -1,0 +1,19 @@
+:root {
+    --main-color: #000;
+	--sub-color: #FFF;
+    --bg-color: #cad3d6;
+    --text-color: #666;
+  
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box
+}
+
+html {
+	font-size: 20px;
+}
